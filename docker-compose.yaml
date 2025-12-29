@@ -18,5 +18,6 @@ services:
       - ./tvseries:/data/tvshows
       - ./movies:/data/movies
       - ./music:/data/music
-      - /mnt
+      - /mnt:/data/local
+
 
