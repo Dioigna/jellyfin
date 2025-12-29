@@ -5,8 +5,8 @@ services:
     container_name: jellyfin
     restart: unless-stopped
     ports:
-      - "8097:8097"
-      - "8921:8921"  #optional
+      - "8097:8096"
+      - "8921:8920"  #optional
       - "7359:7359/udp"  #optional
       - "1900:1900/udp"  #optional
     environment:
@@ -19,3 +19,4 @@ services:
       - ./movies:/data/movies
       - ./music:/data/music
       - /mnt
+
